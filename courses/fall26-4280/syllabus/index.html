@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syllabus — AI Security and Trustworthy AI — 4280/6280</title>
+  <link rel="stylesheet" href="/courses/fall26-4280/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="/courses/fall26-4280/">AI Security and Trustworthy AI — 4280/6280</a>
+      <nav class="site-nav" aria-label="Primary">
+        
+          <a href="/courses/fall26-4280/">Home</a>
+        
+          <a href="/courses/fall26-4280/schedule/">Schedule</a>
+        
+          <a href="/courses/fall26-4280/syllabus/">Syllabus</a>
+        
+          <a href="/courses/fall26-4280/homework/">Homework & Labs</a>
+        
+          <a href="/courses/fall26-4280/projects/">Projects</a>
+        
+          <a href="/courses/fall26-4280/resources/">Resources</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <h1 id="ai-security-and-trustworthy-ai-42806280">AI Security and Trustworthy AI (4280/6280)</h1>
+
+<h2 id="course-logistics">Course Logistics</h2>
+
+<p><strong>Course Code:</strong> 4280/6280<br />
+<strong>Semester/Year:</strong> Spring 2025<br />
+<strong>Credit Hours:</strong> 3</p>
+
+<p><strong>Instructor:</strong> Long Cheng<br />
+Email: lcheng2@clemson.edu<br />
+Office: McAdams 100<br />
+Office Hours: TBA</p>
+
+<p><strong>Teaching Team:</strong> None (instructor-led)</p>
+
+<p><strong>Meeting Times:</strong><br />
+Mondays and Wednesdays, 2:00–3:30 PM</p>
+
+<p><strong>Location:</strong> TBA</p>
+
+<p><strong>Modality:</strong> In-person or online (TBA)</p>
+
+<p><strong>Course Management System:</strong> Canvas</p>
+
+<h2 id="course-description">Course Description</h2>
+
+<p>This advanced, hands-on course is organized around <strong>three pillars</strong> at the intersection of artificial intelligence and cybersecurity:</p>
+
+<ol>
+  <li><strong>AI for Security</strong> — using AI/ML to improve cybersecurity (network intrusion and anomaly detection, malware detection and classification, phishing/fraud detection, and AI-assisted security operations).</li>
+  <li><strong>Security of AI</strong> — protecting AI systems from attack (adversarial examples, data poisoning and backdoors, model extraction/inversion and membership inference, and the security of large language models).</li>
+  <li><strong>Trustworthy AI</strong> — ensuring AI systems are safe, fair, robust, transparent, and accountable (interpretability, fairness, privacy-preserving ML, robustness certification and formal verification, and AI governance).</li>
+</ol>
+
+<p>Students will learn to apply machine learning to defensive security problems, to identify and model threats to AI systems and implement attacks and defenses, and to audit and improve AI systems for fairness, interpretability, privacy, robustness, and accountability. Through programming assignments, case studies, and a sustained capstone project, students develop the technical and analytical skills to build AI systems that are effective for security, secure against attack, and trustworthy in deployment.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p><strong>Undergraduate (senior-level) students:</strong> CS 301 or permission of instructor.<br />
+<strong>Graduate students:</strong> No prerequisites.</p>
+
+<h2 id="learning-objectives">Learning Objectives</h2>
+
+<p>Upon successful completion of this course, students will be able to:</p>
+
+<ol>
+  <li><strong>Apply machine learning to cybersecurity problems</strong> (AI for Security) — build and evaluate detectors for network intrusion, malware, and phishing/fraud, accounting for class imbalance, concept drift, and operational constraints.</li>
+  <li><strong>Design and execute threat models</strong> for AI systems, identifying attack vectors, adversaries, capabilities, and assets at risk across the ML lifecycle.</li>
+  <li><strong>Implement adversarial attacks and defenses</strong> (Security of AI) using Python and deep learning frameworks (TensorFlow/PyTorch), including evasion, poisoning/backdoors, and model-extraction/privacy attacks.</li>
+  <li><strong>Apply interpretability and explainability techniques</strong> (e.g., LIME, SHAP, attention, Integrated Gradients) to understand and audit model decisions.</li>
+  <li><strong>Conduct fairness audits</strong>, detect and quantify bias in AI systems, and implement fairness mitigation strategies.</li>
+  <li><strong>Design and implement privacy-preserving techniques</strong> such as differential privacy (DP-SGD), federated learning, and secure aggregation.</li>
+  <li><strong>Verify robustness and reason about AI governance</strong> using formal verification/certification techniques and transparency/accountability practices (model cards, audits, regulatory frameworks).</li>
+  <li><strong>Evaluate AI holistically across the three pillars</strong>, balancing detection effectiveness, security against attack, and trustworthiness trade-offs.</li>
+  <li><strong>Architect and present a capstone project</strong> that integrates multiple pillars on a real-world or benchmark AI system.</li>
+</ol>
+
+<h2 id="topics-covered">Topics Covered</h2>
+
+<p>Organized around the course’s three pillars:</p>
+
+<p><strong>Pillar 1 — AI for Security</strong></p>
+<ol>
+  <li>Foundations of Machine Learning for Cybersecurity</li>
+  <li>Network Intrusion and Anomaly Detection</li>
+  <li>Malware Detection and Classification</li>
+  <li>Phishing/Fraud Detection and AI for Security Operations</li>
+</ol>
+
+<p><strong>Pillar 2 — Security of AI</strong></p>
+<ol>
+  <li>Threat Modeling for ML Systems and Adversarial Examples</li>
+  <li>Advanced Evasion, Transferability, Data Poisoning, and Backdoors</li>
+  <li>Model Extraction, Inversion, Membership Inference, and LLM Security</li>
+  <li>Adversarial Defenses and Robustness</li>
+</ol>
+
+<p><strong>Pillar 3 — Trustworthy AI</strong></p>
+<ol>
+  <li>Interpretability and Explainability</li>
+  <li>Fairness: Definitions, Metrics, Detection, and Mitigation</li>
+  <li>Privacy-Preserving Machine Learning</li>
+  <li>Robustness Certification, Formal Verification, and Safety</li>
+  <li>Transparency, Accountability, and AI Governance</li>
+</ol>
+
+<h2 id="textbook-and-readings">Textbook and Readings</h2>
+
+<p>No required textbook. The instructor will provide or recommend open-source resources, academic papers, tool documentation, and web-based tutorials as needed for each unit. Links and materials will be shared via Canvas.</p>
+
+<h2 id="time-expectations">Time Expectations</h2>
+
+<p><strong>In-class:</strong> 3 hours per week (two 90-minute sessions)<br />
+<strong>Independent work:</strong> 6–9 hours per week (programming assignments, readings, case studies, capstone development)<br />
+<strong>Total:</strong> 9–12 hours per week</p>
+
+<h2 id="grade-breakdown">Grade Breakdown</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Homework and Labs (8–10 assignments)</td>
+      <td>35%</td>
+    </tr>
+    <tr>
+      <td>Quizzes and Participation</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>Midterm Project</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>Individual Capstone Project</td>
+      <td>35%</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>100%</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="assessment-types-and-descriptions">Assessment Types and Descriptions</h2>
+
+<h3 id="homework-and-labs-35">Homework and Labs (35%)</h3>
+
+<p>Students will complete 8–10 programming assignments and lab exercises over the course of 17 weeks. Each assignment involves writing Python code using TensorFlow or PyTorch to implement concepts from the lecture (e.g., adversarial attack methods, fairness audits, interpretability analysis, privacy mechanisms). Assignments are cumulative and scaffold toward the capstone. Case studies and security audits are embedded within these coding projects—students do not submit separate written audit reports but instead document findings and code in a Jupyter notebook or GitHub repository. Each assignment is graded on correctness of implementation, code quality, documentation, and adherence to submission standards. Late work is penalized 10% per day for up to 48 hours; work submitted more than 48 hours late receives no credit unless prior arrangements are made.</p>
+
+<h3 id="quizzes-and-participation-10">Quizzes and Participation (10%)</h3>
+
+<p>Quizzes are short, low-stakes assessments administered in-class or via Canvas to gauge comprehension of key concepts (threat modeling terminology, fairness metrics, privacy definitions, etc.). Participation includes active engagement in discussions, office hours attendance, peer code review, and constructive collaboration on lab work. Together, quizzes and participation form a single 10% component; the instructor will use a combination of quiz scores and qualitative participation observation to assign this grade, aiming to reward consistent engagement in a hands-on course.</p>
+
+<h3 id="midterm-project-20">Midterm Project (20%)</h3>
+
+<p>In weeks 8–9, students undertake a structured midterm project in which they select an AI system (real or synthetic), build a threat model, and execute one or more adversarial attacks or implement a defense mechanism. The project culminates in a written report (5–10 pages) and a short in-class presentation (5–7 minutes). The report should cover the threat model, attack/defense methodology, experimental results, and insights. Grading is based on technical depth, correctness, clarity of presentation, and integration of threat modeling concepts.</p>
+
+<h3 id="individual-capstone-project-35">Individual Capstone Project (35%)</h3>
+
+<p>Beginning in week 12 and concluding in week 17, each student undertakes a sustained, individual capstone project that integrates across the course’s three pillars (e.g., build an ML-based detector and then secure and audit it, or combine adversarial robustness + fairness, or privacy + interpretability + certification). Students select or are assigned a real-world or benchmark AI system and conduct a comprehensive audit, design and implement improvements, and evaluate the system holistically. The capstone culminates in two deliverables:</p>
+
+<ol>
+  <li><strong>Written Report</strong> (15–20 pages): A technical document detailing the system under study, threat models, experimental findings, implementations, and trade-offs between trustworthiness dimensions.</li>
+  <li><strong>Presentation</strong> (10–15 minutes): An oral presentation with slides and/or live demo, delivered during the final exam period or a designated capstone presentation session, followed by Q&amp;A.</li>
+</ol>
+
+<p>Grading criteria include technical rigor, novelty of approach, integration of course concepts, clarity of documentation and presentation, and reproducibility of results. Interim milestones (project proposal in week 12, progress report in week 14) are embedded in the schedule to ensure sustained progress and timely feedback.</p>
+
+<h2 id="attendance-and-participation-expectations">Attendance and Participation Expectations</h2>
+
+<p>Regular attendance is expected. In-person or synchronous online attendance allows you to engage with lectures, participate in discussions, and collaborate on lab work. If you must miss class due to illness, emergency, or other valid reason, inform the instructor as soon as possible. Excessive unexcused absences may affect your participation grade and overall course performance. Active participation in discussions, lab partnerships, and office hours is valued and contributes to the quizzes/participation component.</p>
+
+<h2 id="late-work-and-extension-policy">Late Work and Extension Policy</h2>
+
+<p>Assignments are due at the date and time listed on the schedule. Late submissions are accepted up to 48 hours past the deadline with a 10% penalty per day (i.e., 10% off for submission 0–24 hours late; additional 10% for submission 24–48 hours late). Work submitted more than 48 hours late receives no credit unless prior arrangements have been made with the instructor. If you anticipate difficulty meeting a deadline, contact the instructor <em>before</em> the deadline passes to negotiate an extension.</p>
+
+<p>Capstone milestones (proposal, progress report, final report and presentation) follow the same late-work policy. Missing a midterm or capstone milestone without prior notice or valid excuse may result in a zero or significant grade reduction.</p>
+
+<h2 id="regrade-request-policy">Regrade Request Policy</h2>
+
+<p>If you believe an assignment or exam has been graded in error, submit a regrade request to the instructor within 5 business days of receiving your grade. The request must clearly explain the basis for the appeal (e.g., incorrect scoring, misapplied rubric, factual error). Upon review, the instructor may adjust the grade upward, downward, or leave it unchanged. Regrade requests submitted after the 5-day window will not be considered.</p>
+
+<h2 id="exam-format-and-makeup-policy">Exam Format and Makeup Policy</h2>
+
+<p>This course does not include a traditional final exam. Assessment is based on homework, labs, quizzes, the midterm project, and the individual capstone project. If you must miss a quiz or capstone presentation due to illness, injury, or other documented emergency, contact the instructor immediately to arrange a makeup date or alternative submission format. Makeup assessments must be completed within 5 business days of the original due date unless otherwise agreed.</p>
+
+<h2 id="academic-integrity">Academic Integrity</h2>
+
+<p>All work submitted in this course must be your own. Collaboration is encouraged where explicitly permitted (e.g., discussing concepts in office hours, peer code review during lab sessions), but presenting another person’s work, ideas, or code as your own—including unauthorized collaboration, copying, or reuse of solutions from online repositories, peers, or prior semesters—is a violation of academic integrity. Suspected violations are handled under the university’s academic integrity policy and may result in a failing grade on the assignment or in the course.</p>
+
+<h2 id="generative-ai-use-policy">Generative-AI Use Policy</h2>
+
+<p>Generative-AI tools (such as ChatGPT, Claude, or GitHub Copilot) may be used only as explicitly permitted for a given assignment. When permitted, you must disclose which tool you used, how you used it (e.g., for brainstorming, code generation, debugging), and you remain fully responsible for the correctness and originality of everything you submit. Using these tools where they are prohibited, or submitting their output as your own unaided work, is a violation of academic integrity. The instructor will specify permissible AI use in the assignment brief for each homework and project.</p>
+
+<h2 id="code-submission-standards">Code Submission Standards</h2>
+
+<p>All programming assignments and the capstone project must adhere to the following standards:</p>
+
+<ul>
+  <li><strong>Version control:</strong> Code must be submitted via GitHub (or another instructor-approved platform) with a clear commit history. Include a README.md file documenting setup, dependencies, and instructions to run the code.</li>
+  <li><strong>Language and framework:</strong> Use Python 3.8 or later with TensorFlow 2.x or PyTorch 1.x (or instructor-approved alternatives).</li>
+  <li><strong>Documentation:</strong> Include inline comments and docstrings explaining key functions and design choices. Jupyter notebooks must be reproducible and include markdown cells describing the experiment or analysis.</li>
+  <li><strong>Reproducibility:</strong> All code must run without manual modification. Include a <code class="language-plaintext highlighter-rouge">requirements.txt</code> or <code class="language-plaintext highlighter-rouge">environment.yml</code> file listing exact versions of dependencies. Provide random seeds and clear instructions for reproducing results.</li>
+  <li><strong>Testing:</strong> Where appropriate, include unit tests or validation checks demonstrating that your code works as intended.</li>
+</ul>
+
+<p>Failure to meet these standards may result in a grade penalty or rejection of the submission.</p>
+
+<h2 id="professionalism-and-conduct-expectations">Professionalism and Conduct Expectations</h2>
+
+<p>Treat all instructors, peers, and guests with respect. Disruptive behavior, harassment, or discrimination of any kind will not be tolerated and may result in removal from class and referral to Student Conduct. In discussions and collaborative work, listen actively, assume good intent, and communicate professionally. When asking for help or providing feedback, be specific and constructive.</p>
+
+<h2 id="communication-norms">Communication Norms</h2>
+
+<p><strong>Email response time:</strong> The instructor aims to respond to emails within 2 business days. For urgent matters, contact the instructor during office hours or before/after class.<br />
+<strong>Preferred channel:</strong> Use email for formal requests (extensions, makeup exams, regrade appeals) and Canvas messaging for quick clarifications about assignments. Office hours (time TBA) are available for in-depth discussions about course concepts and project guidance.</p>
+
+<h2 id="disability-support-services">Disability Support Services</h2>
+
+<p>Students with disabilities may be eligible for academic accommodations. To request accommodations, contact the university’s Disability Support Services office or the equivalent accessibility services on your campus. Provide the instructor with any accommodation letter or documentation as soon as possible. The instructor will work with you to arrange reasonable accommodations such as extended exam time, note-taking support, or alternative assignment formats that do not compromise learning objectives.</p>
+
+<h2 id="religious-holiday-accommodations">Religious Holiday Accommodations</h2>
+
+<p>If a religious holiday or observance conflicts with a course deadline or assessment, contact the instructor at least two weeks in advance. Reasonable accommodations will be made to allow you to participate fully in the course without sacrificing your religious practice.</p>
+
+<h2 id="counseling-and-psychological-services">Counseling and Psychological Services</h2>
+
+<p>The university provides free, confidential counseling and mental health support for students experiencing stress, anxiety, depression, or other challenges. Information is available through the university’s health and wellness website. If you are struggling, please reach out to Counseling Services or speak with the instructor, who can direct you to appropriate resources.</p>
+
+<h2 id="nondiscrimination-and-harassment-free-environment">Nondiscrimination and Harassment-Free Environment</h2>
+
+<p>The university is committed to a nondiscriminatory educational environment free from harassment, bullying, and discrimination based on race, color, religion, sex, national origin, age, disability, sexual orientation, gender identity, or other protected status. Any reported incidents will be addressed promptly and confidentially. If you experience or witness discrimination or harassment, report it to the Office of Equity and Inclusion or to the instructor.</p>
+
+<h2 id="classroom-recording-and-electronic-course-materials">Classroom Recording and Electronic Course Materials</h2>
+
+<p>Class sessions may be recorded by the instructor for asynchronous access and to aid students with documented disabilities. These recordings are intended for educational use within the course only and may not be shared, reposted, or distributed without explicit permission. Students are not permitted to record class sessions without prior written consent from the instructor. Course materials (syllabi, slides, handouts) are the intellectual property of the instructor and the university; unauthorized reproduction or distribution is prohibited.</p>
+
+<h2 id="schedule">Schedule</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Session</th>
+      <th>Topic</th>
+      <th>Reading</th>
+      <th>Assignments / Due</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Mon</td>
+      <td>Introduction and the Three Pillars of AI and Security</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Wed</td>
+      <td>Motivation, Course Overview, ML Refresher</td>
+      <td>—</td>
+      <td>HW1 out</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Mon</td>
+      <td><em>Pillar 1: AI for Security</em> — Foundations of ML for Cybersecurity</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Wed</td>
+      <td>Security Data, Feature Engineering, and Evaluation under Class Imbalance</td>
+      <td>—</td>
+      <td>HW1 due; HW2 out</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mon</td>
+      <td>Network Intrusion and Anomaly Detection</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Wed</td>
+      <td>Supervised vs. Unsupervised NIDS (Isolation Forest, Autoencoders, One-Class SVM)</td>
+      <td>—</td>
+      <td>HW2 due; HW3 out</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Mon</td>
+      <td>Malware Detection and Classification</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Wed</td>
+      <td>Static/Dynamic Features, Deep Learning on Binaries (MalConv/EMBER)</td>
+      <td>—</td>
+      <td>HW3 due; HW4 out</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Mon</td>
+      <td>Phishing/Fraud Detection (NLP, URL &amp; Transaction Features)</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Wed</td>
+      <td>AI for Security Operations (Log Analysis, Alert Triage, Threat Intel, LLM Assistants)</td>
+      <td>—</td>
+      <td>HW4 due; HW5 out</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Mon</td>
+      <td><em>Pillar 2: Security of AI</em> — Threat Modeling for ML Systems</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Wed</td>
+      <td>Adversarial Examples: FGSM and PGD (attacking the Week 2–5 detectors)</td>
+      <td>—</td>
+      <td>HW5 due; HW6 out; Midterm Project Proposal out</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Mon</td>
+      <td>Advanced Evasion: C&amp;W, Transferability, Black-box Attacks</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Wed</td>
+      <td>Data Poisoning and Backdoor/Trojan Attacks</td>
+      <td>—</td>
+      <td>HW6 due; Midterm work session</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Mon</td>
+      <td>Midterm Project Work Session</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Wed</td>
+      <td>Midterm Project Presentations</td>
+      <td>—</td>
+      <td>Midterm Project Report &amp; Presentation due</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Mon</td>
+      <td>Model Extraction, Inversion, and Membership Inference</td>
+      <td>—</td>
+      <td>HW7 out</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Wed</td>
+      <td>LLM Security: Prompt Injection, Jailbreaks, Training-Data Extraction</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Mon</td>
+      <td>Adversarial Defenses: Adversarial Training and the Robustness Trade-off</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Wed</td>
+      <td>Certified Defenses, Adaptive Evaluation, and Poisoning/Backdoor Defenses</td>
+      <td>—</td>
+      <td>HW7 due; HW8 out</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Mon</td>
+      <td><em>Pillar 3: Trustworthy AI</em> — Interpretability: Intrinsic vs. Post-hoc</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Wed</td>
+      <td>LIME, SHAP, Attention, and Feature Attribution (Integrated Gradients, Grad-CAM)</td>
+      <td>—</td>
+      <td>HW8 due; Capstone Project Proposal out</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Mon</td>
+      <td>Fairness: Definitions and Metrics (Parity, Equalized Odds, Calibration)</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Wed</td>
+      <td>Bias Detection and Fairness Audits; Impossibility Results</td>
+      <td>—</td>
+      <td>Capstone Project Proposal due; Capstone Work Begins</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Mon</td>
+      <td>Fairness Mitigation and Bias Correction</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Wed</td>
+      <td>Reweighting, Adversarial Debiasing, Threshold Adjustment, and Trade-offs</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Mon</td>
+      <td>Privacy-Preserving ML: Differential Privacy and DP-SGD</td>
+      <td>—</td>
+      <td>HW9 out</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Wed</td>
+      <td>Federated Learning, Secure Aggregation, Homomorphic Encryption</td>
+      <td>—</td>
+      <td>Capstone Progress Report due</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Mon</td>
+      <td>Robustness Certification and Formal Verification (SMT, IBP, Randomized Smoothing)</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Wed</td>
+      <td>Neural Network Verification, Safety, and Certification</td>
+      <td>—</td>
+      <td>HW9 due</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Mon</td>
+      <td>Transparency and Accountability (Model Cards, Audits, EU AI Act / NIST AI RMF)</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Wed</td>
+      <td>Three-Pillar Synthesis and Capstone Integration</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Mon</td>
+      <td>Capstone Presentations and Q&amp;A</td>
+      <td>—</td>
+      <td>Capstone Report due; Capstone Presentation</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Wed</td>
+      <td>Capstone Presentations and Closing</td>
+      <td>—</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="lecture-hints">Lecture Hints</h2>
+
+<p><strong>Week 1: Introduction and the Three Pillars of AI and Security</strong><br />
+Frame the whole course around three pillars: (1) AI for Security — using ML to defend systems (intrusion/malware/phishing detection, security operations); (2) Security of AI — protecting ML models from adversarial, poisoning, and privacy attacks; (3) Trustworthy AI — making AI safe, fair, robust, transparent, and accountable. Motivate with high-stakes deployments (SOC automation, autonomous vehicles, lending). Use one running example (e.g., an ML-based malware detector deployed in a SOC) that touches all three pillars: it must work (Pillar 1), resist evasion/poisoning (Pillar 2), and be explainable/accountable (Pillar 3). Recap the ML background the course assumes and preview the assessment arc.</p>
+
+<p><strong>Week 2: Foundations of Machine Learning for Cybersecurity</strong> <em>( AI for Security )</em><br />
+Pillar 1 (AI for Security). Establish the security ML pipeline: data sources (network flows/PCAPs, binaries, logs, emails), labeling challenges, and feature engineering for security data. Stress evaluation under severe class imbalance — precision/recall, PR curves, ROC/AUC, the base-rate fallacy, and the operational cost of false positives in a SOC. Discuss concept drift and non-stationary/adversarial data. Set up the toolkit students reuse for HW2–HW4.</p>
+
+<p><strong>Week 3: Network Intrusion and Anomaly Detection</strong> <em>( AI for Security )</em><br />
+Pillar 1 (AI for Security). Signature vs anomaly-based detection. Supervised classifiers (trees/gradient boosting, MLPs) vs unsupervised anomaly detection (isolation forest, autoencoders, one-class SVM) on network-flow data (e.g., NSL-KDD / CIC-IDS-style). Cover feature extraction from flows, handling rare attack classes, and setting operational thresholds / managing alert volume. Briefly preview that these detectors can themselves be evaded (foreshadow Pillar 2).</p>
+
+<p><strong>Week 4: Malware Detection and Classification</strong> <em>( AI for Security )</em><br />
+Pillar 1 (AI for Security). Malware detection and family classification. Static vs dynamic analysis features (byte n-grams, opcode sequences, API/system calls, PE headers, sandbox traces). Deep learning on raw bytes (MalConv-style) and the EMBER feature paradigm. Discuss packing/obfuscation, label noise, dataset bias, and temporal/eval pitfalls (train-test splits by time). Reiterate that the detector is an attack surface.</p>
+
+<p><strong>Week 5: Phishing/Fraud Detection and AI for Security Operations</strong> <em>( AI for Security )</em><br />
+Pillar 1 (AI for Security), closing the pillar. NLP and URL/feature models for phishing and spam; anomaly/fraud detection on transactions. Then AI for the SOC: log analysis, alert triage and prioritization, threat-intelligence extraction, and emerging LLM-based assistants for security operations — with caution about hallucination and prompt injection (bridges to Pillar 2). Summarize where ML genuinely helps defenders and its limits (evasion, drift, base rates).</p>
+
+<p><strong>Week 6: Threat Modeling for ML Systems and Adversarial Examples</strong> <em>( Security of AI )</em><br />
+Pivot to Pillar 2 (Security of AI). Threat-model ML systems: assets, adversary knowledge (white/grey/black-box), capabilities, and the attack surface across the ML lifecycle (data, training, deployment). Define adversarial examples and perturbation budgets (L_inf / L2). Implement FGSM (one-step) and PGD (iterative). Powerful framing: attack the AI-for-Security models students built in weeks 2–5 to show that defensive ML is itself a target.</p>
+
+<p><strong>Week 7: Advanced Evasion, Transferability, and Data Poisoning/Backdoors</strong> <em>( Security of AI )</em><br />
+Pillar 2 (Security of AI). Optimization-based attacks (C&amp;W), transferability across models, and query-based black-box attacks. Then training-time threats: data poisoning (availability vs integrity) and backdoor/trojan attacks with triggers. Discuss real-world feasibility and ML supply-chain risk (pretrained weights, datasets). Implement a small backdoor on a toy model and observe trigger behavior — lab only, framed defensively.</p>
+
+<p><strong>Week 8: Midterm Project Work Session and Presentations</strong> <em>( Security of AI )</em><br />
+Midterm work session and presentations. Students present an ML security system they built (Pillar 1) and/or a threat model with an attack or defense (Pillar 2). Encourage peer questions; give feedback on threat-model rigor, attack strength, baseline soundness, and evaluation quality.</p>
+
+<p><strong>Week 9: Model Extraction, Inversion, Membership Inference, and LLM Security</strong> <em>( Security of AI )</em><br />
+Pillar 2 (Security of AI). Confidentiality attacks ON models: model extraction/stealing, model inversion (reconstructing training data), and membership inference (was this record in training?). Connect membership inference/inversion forward to privacy (Pillar 3, week 14). Then LLM-specific security: prompt injection (direct and indirect/RAG), jailbreaks, and training-data extraction. Discuss why deployed AI-for-Security tools that use LLMs inherit these risks.</p>
+
+<p><strong>Week 10: Adversarial Defenses and Robustness</strong> <em>( Security of AI )</em><br />
+Pillar 2 (Security of AI), closing the pillar. Defenses against evasion: adversarial training (PGD-based) and the robust-vs-clean accuracy trade-off; certified defenses (randomized smoothing, interval bound propagation) at a high level. Explain why obfuscated-gradient / gradient-masking defenses fail and why strong adaptive evaluation is essential. Defenses against poisoning/backdoors (data sanitization, spectral/trigger detection). Note deeper certification returns in week 15.</p>
+
+<p><strong>Week 11: Interpretability and Explainability</strong> <em>( Trustworthy AI )</em><br />
+Begin Pillar 3 (Trustworthy AI). Intrinsic interpretability (decision trees, linear models) vs post-hoc explainability (model-agnostic). Walk through LIME (local linear approximation) and SHAP (Shapley values); deep-net attribution (saliency, Integrated Gradients, Grad-CAM); attention as explanation and its limits. Stress faithfulness vs plausibility, and how explanations can expose bias and vulnerabilities — connecting back to Pillars 1–2 (e.g., explaining a malware detector’s decisions).</p>
+
+<p><strong>Week 12: Fairness: Definitions, Metrics, and Detection</strong> <em>( Trustworthy AI )</em><br />
+Pillar 3 (Trustworthy AI). Define group fairness rigorously: demographic/statistical parity, equalized odds, equal opportunity, and calibration within groups; group vs individual fairness. Explain impossibility results and fairness–accuracy / fairness–fairness trade-offs. Detect bias via stratified/subgroup evaluation with confidence intervals; discuss measurement bias and proxy variables. Use case studies (hiring, lending), and note fairness concerns in security ML (e.g., biased fraud or abuse detection).</p>
+
+<p><strong>Week 13: Fairness: Mitigation and Bias Correction</strong> <em>( Trustworthy AI )</em><br />
+Pillar 3 (Trustworthy AI). Mitigation across three families: pre-processing (reweighting, resampling), in-processing (constrained optimization, adversarial debiasing), and post-processing (threshold adjustment). Implement at least one and measure the effect on fairness metrics AND accuracy, framed as a Pareto trade-off requiring stakeholder input. Emphasize that mitigation may not be Pareto-optimal and that the right operating point is a sociotechnical decision.</p>
+
+<p><strong>Week 14: Privacy-Preserving Machine Learning (Differential Privacy, Federated Learning)</strong> <em>( Trustworthy AI )</em><br />
+Pillar 3 (Trustworthy AI). Motivate with regulation (GDPR, CCPA) and the model attacks from week 9 (membership inference, model inversion). Differential privacy formally ((epsilon, delta)); DP-SGD (gradient clipping + Gaussian noise) and the privacy–utility trade-off / privacy budget. Federated learning, secure aggregation, and homomorphic encryption at a high level. Emphasize privacy is a provable, composable property — unlike ad-hoc anonymization. Note the privacy epsilon differs from the adversarial perturbation epsilon.</p>
+
+<p><strong>Week 15: Robustness Certification, Formal Verification, and Safety</strong> <em>( Trustworthy AI )</em><br />
+Pillar 3 (Trustworthy AI). Verify neural-network properties: SMT solvers / symbolic methods, abstract interpretation and interval bound propagation for sound over-approximation, and certified robustness (randomized smoothing, the ACAS Xu benchmark). Discuss soundness vs completeness and the scalability limits of formal methods on large networks. Connect certification to safety cases and regulatory compliance (assurance, aviation, the EU AI Act).</p>
+
+<p><strong>Week 16: Transparency, Accountability, and AI Governance; Three-Pillar Synthesis</strong> <em>( Trustworthy AI )</em><br />
+Pillar 3 (Trustworthy AI) and synthesis. Transparency and documentation (model cards, datasheets, audit trails), accountability and auditing, and the regulatory/standards landscape (EU AI Act, NIST AI RMF). Synthesize all three pillars: AI-for-Security systems (Pillar 1) must themselves be secured (Pillar 2) and made trustworthy (Pillar 3). Guide capstone integration across pillars and provide actionable feedback on technical depth and communication.</p>
+
+<p><strong>Week 17: Capstone Presentations and Closing</strong><br />
+Capstone presentations (10–15 min + Q&amp;A) and course closing. Ask probing questions about threat models, design trade-offs, limitations, and real-world deployment. Recap the three pillars and how they interlock, then point students to where to go next: research venues, open-source tools, and communities. Provide actionable feedback on technical depth and presentation clarity.</p>
+
+<p><em>End of Syllabus</em></p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>AI Security and Trustworthy AI — 4280/6280 &middot; Spring 2025 &middot; Instructor: Long Cheng</p>
+      <p>Design, implement, and evaluate trustworthy AI systems.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources — AI Security and Trustworthy AI — 4280/6280</title>
+  <link rel="stylesheet" href="/courses/fall26-4280/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="/courses/fall26-4280/">AI Security and Trustworthy AI — 4280/6280</a>
+      <nav class="site-nav" aria-label="Primary">
+        
+          <a href="/courses/fall26-4280/">Home</a>
+        
+          <a href="/courses/fall26-4280/schedule/">Schedule</a>
+        
+          <a href="/courses/fall26-4280/syllabus/">Syllabus</a>
+        
+          <a href="/courses/fall26-4280/homework/">Homework & Labs</a>
+        
+          <a href="/courses/fall26-4280/projects/">Projects</a>
+        
+          <a href="/courses/fall26-4280/resources/">Resources</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <h1 id="resources">Resources</h1>
+
+<p>There is no required textbook. The instructor posts papers, tool documentation, and
+tutorials on Canvas per unit. The references below are organized by the course’s <strong>three
+pillars</strong>. Use these libraries for homework, the midterm, and the capstone.</p>
+
+<h2 id="pillar-1--ai-for-security">Pillar 1 — AI for Security</h2>
+
+<p>Datasets, tools, and references for building defensive ML (intrusion, malware, phishing/fraud
+detection, and security operations).</p>
+
+<ul>
+  <li><strong>scikit-learn</strong> — classical ML, pipelines, and evaluation metrics (PR/ROC, imbalanced data): <a href="https://scikit-learn.org/">https://scikit-learn.org/</a></li>
+  <li><strong>NSL-KDD</strong> — benchmark network-intrusion dataset: <a href="https://www.unb.ca/cic/datasets/nsl.html">https://www.unb.ca/cic/datasets/nsl.html</a></li>
+  <li><strong>CIC-IDS-2017 / CSE-CIC-IDS2018</strong> — modern labeled intrusion/flow datasets: <a href="https://www.unb.ca/cic/datasets/ids-2017.html">https://www.unb.ca/cic/datasets/ids-2017.html</a></li>
+  <li><strong>EMBER</strong> — labeled PE-malware feature dataset and benchmark: <a href="https://github.com/elastic/ember">https://github.com/elastic/ember</a></li>
+  <li><strong>MalConv</strong> — deep learning on raw bytes for malware detection (reference): <a href="https://arxiv.org/abs/1710.09435">https://arxiv.org/abs/1710.09435</a></li>
+  <li><strong>Zeek</strong> — network security monitor / flow + log generation: <a href="https://zeek.org/">https://zeek.org/</a></li>
+  <li><strong>Suricata</strong> — IDS/IPS and network analysis engine: <a href="https://suricata.io/">https://suricata.io/</a></li>
+  <li><strong>PhishTank</strong> — phishing URL feeds: <a href="https://www.phishtank.com/">https://www.phishtank.com/</a> · <strong>UCI Phishing Websites</strong> dataset: <a href="https://archive.ics.uci.edu/dataset/327/phishing+websites">https://archive.ics.uci.edu/dataset/327/phishing+websites</a></li>
+  <li><strong>LLMs for SecOps</strong> — using LLMs for log analysis, alert triage, and threat-intel extraction (with caution re: hallucination and prompt injection — see Pillar 2): <a href="https://github.com/cybersecurity-llm/awesome-cybersecurity-llm">https://github.com/cybersecurity-llm/awesome-cybersecurity-llm</a></li>
+  <li>Key concepts: class imbalance, base-rate fallacy, concept drift, feature engineering for flows/binaries/emails, operational thresholds and alert volume.</li>
+</ul>
+
+<h2 id="pillar-2--security-of-ai">Pillar 2 — Security of AI</h2>
+
+<p>Libraries for attacking and stress-testing ML models: adversarial examples, poisoning/backdoors,
+model extraction/inversion, and LLM security.</p>
+
+<ul>
+  <li><strong>CleverHans</strong> — adversarial example library (TF/JAX/PyTorch): <a href="https://github.com/cleverhans-lab/cleverhans">https://github.com/cleverhans-lab/cleverhans</a></li>
+  <li><strong>Foolbox</strong> — fast adversarial attacks for PyTorch, TF, JAX: <a href="https://github.com/bethgelab/foolbox">https://github.com/bethgelab/foolbox</a></li>
+  <li><strong>Adversarial Robustness Toolbox (ART)</strong> — attacks, defenses, poisoning, extraction, inference (IBM/LF AI): <a href="https://github.com/Trusted-AI/adversarial-robustness-toolbox">https://github.com/Trusted-AI/adversarial-robustness-toolbox</a></li>
+  <li><strong>TextAttack</strong> — adversarial attacks and data augmentation for NLP models: <a href="https://github.com/QData/TextAttack">https://github.com/QData/TextAttack</a></li>
+  <li><strong>RobustBench</strong> — standardized robustness benchmark &amp; model zoo: <a href="https://robustbench.github.io/">https://robustbench.github.io/</a></li>
+  <li><strong>OWASP Top 10 for LLM Applications</strong> — prompt injection, jailbreaks, data leakage (reference): <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/">https://owasp.org/www-project-top-10-for-large-language-model-applications/</a></li>
+  <li>Key methods: FGSM, PGD, C&amp;W, transfer/black-box attacks; data poisoning and backdoors; model extraction, model inversion, membership inference; prompt injection and jailbreaks; adversarial training as a defense.</li>
+</ul>
+
+<h2 id="pillar-3--trustworthy-ai">Pillar 3 — Trustworthy AI</h2>
+
+<p>Tools for interpretability, fairness, privacy-preserving ML, certified robustness, and
+governance.</p>
+
+<h3 id="interpretability--explainability">Interpretability &amp; Explainability</h3>
+
+<ul>
+  <li><strong>SHAP</strong> — Shapley-value feature attribution: <a href="https://github.com/shap/shap">https://github.com/shap/shap</a></li>
+  <li><strong>LIME</strong> — local interpretable model-agnostic explanations: <a href="https://github.com/marcotcr/lime">https://github.com/marcotcr/lime</a></li>
+  <li><strong>Captum</strong> — model interpretability for PyTorch (saliency, Integrated Gradients, Grad-CAM): <a href="https://captum.ai/">https://captum.ai/</a></li>
+  <li><strong>InterpretML</strong> — glassbox models and blackbox explanations: <a href="https://github.com/interpretml/interpret">https://github.com/interpretml/interpret</a></li>
+</ul>
+
+<h3 id="fairness">Fairness</h3>
+
+<ul>
+  <li><strong>AIF360</strong> — AI Fairness 360 toolkit (metrics + mitigation): <a href="https://github.com/Trusted-AI/AIF360">https://github.com/Trusted-AI/AIF360</a></li>
+  <li><strong>Fairlearn</strong> — fairness assessment and mitigation: <a href="https://fairlearn.org/">https://fairlearn.org/</a></li>
+  <li><strong>What-If Tool</strong> — interactive bias/fairness probing: <a href="https://pair-code.github.io/what-if-tool/">https://pair-code.github.io/what-if-tool/</a></li>
+  <li>Key concepts: demographic parity, equalized odds, calibration; pre-/in-/post-processing mitigation; impossibility results.</li>
+</ul>
+
+<h3 id="privacy-preserving-ml">Privacy-Preserving ML</h3>
+
+<ul>
+  <li><strong>Opacus</strong> — differential privacy (DP-SGD) for PyTorch: <a href="https://opacus.ai/">https://opacus.ai/</a></li>
+  <li><strong>TensorFlow Privacy</strong> — DP optimizers and analysis for TF: <a href="https://github.com/tensorflow/privacy">https://github.com/tensorflow/privacy</a></li>
+  <li><strong>Flower</strong> — federated learning framework: <a href="https://flower.ai/">https://flower.ai/</a></li>
+  <li><strong>TenSEAL</strong> — homomorphic encryption for tensors: <a href="https://github.com/OpenMined/TenSEAL">https://github.com/OpenMined/TenSEAL</a></li>
+  <li>Key concepts: differential privacy &amp; privacy budgets, membership inference, model inversion, secure aggregation.</li>
+</ul>
+
+<h3 id="robustness-certification--formal-verification">Robustness Certification &amp; Formal Verification</h3>
+
+<ul>
+  <li><strong>Marabou</strong> — SMT-based neural network verification: <a href="https://github.com/NeuralNetworkVerification/Marabou">https://github.com/NeuralNetworkVerification/Marabou</a></li>
+  <li><strong>auto_LiRPA</strong> — automatic linear relaxation bound propagation: <a href="https://github.com/Verified-Intelligence/auto_LiRPA">https://github.com/Verified-Intelligence/auto_LiRPA</a></li>
+  <li><strong>α,β-CROWN</strong> — state-of-the-art complete NN verifier (VNN-COMP): <a href="https://github.com/Verified-Intelligence/alpha-beta-CROWN">https://github.com/Verified-Intelligence/alpha-beta-CROWN</a></li>
+  <li><strong>ERAN</strong> — abstract-interpretation-based verification: <a href="https://github.com/eth-sri/eran">https://github.com/eth-sri/eran</a></li>
+  <li>Key concepts: SMT solvers, abstract interpretation, interval bound propagation, ACAS Xu, randomized smoothing.</li>
+</ul>
+
+<h3 id="transparency-accountability--governance">Transparency, Accountability &amp; Governance</h3>
+
+<ul>
+  <li><strong>Model Cards</strong> — model documentation framework (reference): <a href="https://modelcards.withgoogle.com/about">https://modelcards.withgoogle.com/about</a></li>
+  <li><strong>Datasheets for Datasets</strong> (reference): <a href="https://arxiv.org/abs/1803.09010">https://arxiv.org/abs/1803.09010</a></li>
+  <li><strong>EU AI Act</strong> — official text and overview: <a href="https://artificialintelligenceact.eu/">https://artificialintelligenceact.eu/</a></li>
+  <li><strong>NIST AI Risk Management Framework (AI RMF)</strong>: <a href="https://www.nist.gov/itl/ai-risk-management-framework">https://www.nist.gov/itl/ai-risk-management-framework</a></li>
+</ul>
+
+<h2 id="frameworks--general-tooling">Frameworks &amp; General Tooling</h2>
+
+<ul>
+  <li><strong>PyTorch</strong> docs: <a href="https://pytorch.org/docs/">https://pytorch.org/docs/</a> · tutorials: <a href="https://pytorch.org/tutorials/">https://pytorch.org/tutorials/</a></li>
+  <li><strong>TensorFlow</strong> docs: <a href="https://www.tensorflow.org/api_docs">https://www.tensorflow.org/api_docs</a> · tutorials: <a href="https://www.tensorflow.org/tutorials">https://www.tensorflow.org/tutorials</a></li>
+  <li><strong>scikit-learn</strong> (classical ML &amp; metrics): <a href="https://scikit-learn.org/">https://scikit-learn.org/</a></li>
+  <li><strong>Jupyter</strong> (notebooks for documenting experiments): <a href="https://jupyter.org/">https://jupyter.org/</a></li>
+</ul>
+
+<p>See the <a href="/courses/fall26-4280/schedule/">Schedule</a> for which pillar each week covers.</p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>AI Security and Trustworthy AI — 4280/6280 &middot; Spring 2025 &middot; Instructor: Long Cheng</p>
+      <p>Design, implement, and evaluate trustworthy AI systems.</p>
+    </div>
+  </footer>
+</body>
+</html>

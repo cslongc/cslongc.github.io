@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — AI Security and Trustworthy AI — 4280/6280</title>
+  <link rel="stylesheet" href="/courses/fall26-4280/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="/courses/fall26-4280/">AI Security and Trustworthy AI — 4280/6280</a>
+      <nav class="site-nav" aria-label="Primary">
+        
+          <a href="/courses/fall26-4280/">Home</a>
+        
+          <a href="/courses/fall26-4280/schedule/">Schedule</a>
+        
+          <a href="/courses/fall26-4280/syllabus/">Syllabus</a>
+        
+          <a href="/courses/fall26-4280/homework/">Homework & Labs</a>
+        
+          <a href="/courses/fall26-4280/projects/">Projects</a>
+        
+          <a href="/courses/fall26-4280/resources/">Resources</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap content">
+    <h1 id="ai-security-and-trustworthy-ai-42806280">AI Security and Trustworthy AI (4280/6280)</h1>
+
+<p class="tagline">Build AI that is effective for security, secure against attack, and trustworthy in deployment.</p>
+
+<p><strong>Spring 2025 · Mondays and Wednesdays, 2:00–3:30 PM · Instructor: Long Cheng</strong></p>
+
+<h2 id="the-three-pillars">The Three Pillars</h2>
+
+<p>This course is organized around <strong>three interconnected pillars</strong> at the intersection of artificial intelligence and cybersecurity:</p>
+
+<ol>
+  <li><strong>AI for Security</strong> — using AI/ML to defend systems: network intrusion and anomaly detection, malware detection and classification, phishing/fraud detection, and AI-assisted security operations.</li>
+  <li><strong>Security of AI</strong> — protecting ML models from attack: adversarial examples, data poisoning and backdoors, model extraction/inversion and membership inference, and LLM security.</li>
+  <li><strong>Trustworthy AI</strong> — making AI safe, fair, robust, transparent, and accountable: interpretability, fairness, privacy-preserving ML, robustness certification and formal verification, and AI governance.</li>
+</ol>
+
+<p>A single running example threads through all three: an ML-based detector deployed in a SOC must <em>work</em> (Pillar 1), <em>resist evasion and poisoning</em> (Pillar 2), and be <em>explainable and accountable</em> (Pillar 3).</p>
+
+<h2 id="schedule-at-a-glance">Schedule at a Glance</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Dates</th>
+      <th>Pillar</th>
+      <th>Topic</th>
+      <th>Reading</th>
+      <th>Due</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Week 1</td>
+      <td>Overview</td>
+      <td>Introduction and the Three Pillars of AI and Security</td>
+      <td>—</td>
+      <td>HW1 out (Wed)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Week 2</td>
+      <td>AI for Security</td>
+      <td>Foundations of Machine Learning for Cybersecurity</td>
+      <td>—</td>
+      <td>HW1 due (Wed); HW2 out</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Week 3</td>
+      <td>AI for Security</td>
+      <td>Network Intrusion and Anomaly Detection</td>
+      <td>—</td>
+      <td>HW2 due (Wed); HW3 out</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Week 4</td>
+      <td>AI for Security</td>
+      <td>Malware Detection and Classification</td>
+      <td>—</td>
+      <td>HW3 due (Wed); HW4 out</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Week 5</td>
+      <td>AI for Security</td>
+      <td>Phishing/Fraud Detection and AI for Security Operations</td>
+      <td>—</td>
+      <td>HW4 due (Wed); HW5 out</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Week 6</td>
+      <td>Security of AI</td>
+      <td>Threat Modeling for ML Systems and Adversarial Examples</td>
+      <td>—</td>
+      <td>HW5 due (Wed); HW6 out; Midterm Project Proposal out</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Week 7</td>
+      <td>Security of AI</td>
+      <td>Advanced Evasion, Transferability, and Data Poisoning/Backdoors</td>
+      <td>—</td>
+      <td>HW6 due (Wed); Midterm Project work session</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Week 8</td>
+      <td>Security of AI</td>
+      <td>Midterm Project Work Session and Presentations</td>
+      <td>—</td>
+      <td>Midterm Project Report &amp; Presentation due (Wed)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Week 9</td>
+      <td>Security of AI</td>
+      <td>Model Extraction, Inversion, Membership Inference, and LLM Security</td>
+      <td>—</td>
+      <td>HW7 out (Mon)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Week 10</td>
+      <td>Security of AI</td>
+      <td>Adversarial Defenses and Robustness</td>
+      <td>—</td>
+      <td>HW7 due (Wed); HW8 out</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Week 11</td>
+      <td>Trustworthy AI</td>
+      <td>Interpretability and Explainability</td>
+      <td>—</td>
+      <td>HW8 due (Wed); Capstone Project Proposal out</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Week 12</td>
+      <td>Trustworthy AI</td>
+      <td>Fairness: Definitions, Metrics, and Detection</td>
+      <td>—</td>
+      <td>Capstone Project Proposal due (Wed); Capstone Work Begins</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Week 13</td>
+      <td>Trustworthy AI</td>
+      <td>Fairness: Mitigation and Bias Correction</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Week 14</td>
+      <td>Trustworthy AI</td>
+      <td>Privacy-Preserving Machine Learning (Differential Privacy, Federated Learning)</td>
+      <td>—</td>
+      <td>HW9 out (Mon); Capstone Progress Report due (Wed)</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Week 15</td>
+      <td>Trustworthy AI</td>
+      <td>Robustness Certification, Formal Verification, and Safety</td>
+      <td>—</td>
+      <td>HW9 due (Wed)</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Week 16</td>
+      <td>Trustworthy AI</td>
+      <td>Transparency, Accountability, and AI Governance; Three-Pillar Synthesis</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Week 17</td>
+      <td>Synthesis</td>
+      <td>Capstone Presentations and Closing</td>
+      <td>—</td>
+      <td>Capstone Report due (Mon); Capstone Presentations (Mon–Wed)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>See the <a href="/courses/fall26-4280/schedule/">full schedule</a> for the pillar grouping and lecture links.</p>
+
+<ul class="quick-links">
+  <li><a href="/courses/fall26-4280/schedule/">Schedule</a></li>
+  <li><a href="/courses/fall26-4280/syllabus/">Syllabus</a></li>
+  <li><a href="/courses/fall26-4280/homework/">Homework &amp; Labs</a></li>
+  <li><a href="/courses/fall26-4280/projects/">Projects</a></li>
+  <li><a href="/courses/fall26-4280/resources/">Resources</a></li>
+</ul>
+
+<h2 id="course-overview">Course Overview</h2>
+
+<p>This advanced, hands-on course is organized around three pillars at the intersection of
+artificial intelligence and cybersecurity. Students learn to <strong>apply machine learning to
+defensive security problems</strong> (AI for Security), to <strong>identify and model threats to AI
+systems and implement attacks and defenses</strong> (Security of AI), and to <strong>audit and improve AI
+systems for fairness, interpretability, privacy, robustness, and accountability</strong>
+(Trustworthy AI). Through programming assignments, case studies, and a sustained capstone
+project, students develop the technical and analytical skills to build AI systems that are
+effective for security, secure against attack, and trustworthy in deployment.</p>
+
+<h2 id="learning-objectives">Learning Objectives</h2>
+
+<p>Upon successful completion of this course, students will be able to:</p>
+
+<ol>
+  <li><strong>Apply machine learning to cybersecurity problems</strong> (AI for Security) — build and evaluate detectors for network intrusion, malware, and phishing/fraud, accounting for class imbalance, concept drift, and operational constraints.</li>
+  <li><strong>Design and execute threat models</strong> for AI systems, identifying attack vectors, adversaries, capabilities, and assets at risk across the ML lifecycle.</li>
+  <li><strong>Implement adversarial attacks and defenses</strong> (Security of AI) using Python and deep learning frameworks (TensorFlow/PyTorch), including evasion, poisoning/backdoors, and model-extraction/privacy attacks.</li>
+  <li><strong>Apply interpretability and explainability techniques</strong> (e.g., LIME, SHAP, attention, Integrated Gradients) to understand and audit model decisions.</li>
+  <li><strong>Conduct fairness audits</strong>, detect and quantify bias, and implement fairness mitigation strategies.</li>
+  <li><strong>Design and implement privacy-preserving techniques</strong> such as differential privacy (DP-SGD), federated learning, and secure aggregation.</li>
+  <li><strong>Verify robustness and reason about AI governance</strong> using formal verification/certification techniques and transparency/accountability practices (model cards, audits, regulatory frameworks).</li>
+  <li><strong>Evaluate AI holistically across the three pillars</strong>, balancing detection effectiveness, security against attack, and trustworthiness trade-offs.</li>
+  <li><strong>Architect and present a capstone project</strong> that integrates multiple pillars on a real-world or benchmark AI system.</li>
+</ol>
+
+<h2 id="assessment">Assessment</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/courses/fall26-4280/homework/">Homework and Labs</a> (9 assignments)</td>
+      <td>35%</td>
+    </tr>
+    <tr>
+      <td>Quizzes and Participation</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td><a href="/courses/fall26-4280/projects/">Midterm Project</a></td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td><a href="/courses/fall26-4280/projects/">Individual Capstone Project</a></td>
+      <td>35%</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>100%</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>See the <a href="/courses/fall26-4280/syllabus/">Syllabus</a> for full policies on late work, regrades, and academic integrity.</p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>AI Security and Trustworthy AI — 4280/6280 &middot; Spring 2025 &middot; Instructor: Long Cheng</p>
+      <p>Design, implement, and evaluate trustworthy AI systems.</p>
+    </div>
+  </footer>
+</body>
+</html>
